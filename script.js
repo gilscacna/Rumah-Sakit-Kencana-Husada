@@ -116,7 +116,6 @@
       observer.observe(counter);
     });
 
-
   });
 
 })();
