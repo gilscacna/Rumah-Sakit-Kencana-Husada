@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak Kami - Rumah Sakit Kencana Husada</title>
+  <link rel="icon" href="assets/img/logo-rskencanahusada.svg" type="image/svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Hubungi Rumah Sakit Kencana Husada untuk pertanyaan, janji temu, dan informasi lebih lanjut.">
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo-rskencanahusada.svg" alt="RS Kencana Husada Logo">
+      </a>
+
+      <nav class="nav-links">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="dokter.html">Dokter</a></li>
+          <li><a href="kontak.html" class="active">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <a href="janji-temu.html" class="btn-appointment">
+        Buat Janji Temu
+      </a>
+
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-title">
+    
+        <h1>Hubungi Kami</h1>
+        <p>Kami siap mendengar dari Anda. Hubungi kami untuk pertanyaan, janji temu, atau informasi lebih lanjut.</p>
+      </div>
+    </section>
+
+    <section id="contact-page">
+      <div class="container">
+        <div class="contact-wrapper">
+
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Informasi Kontak</h3>
+            <p>Kunjungi kami atau hubungi kami kapan saja melalui saluran di bawah ini. Tim kami siap melayani Anda.</p>
+            
+            <div class="info-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Alamat</h4>
+                <p>Jl. Buah Batu No, 1. Bandung<br>Kecamatan Batununggal, Kota Bandung 12345</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>info@rskencanahusada.co.id</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h4>Telepon</h4>
+                <p>+62 (021) 123-4567</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Jam Operasional</h4>
+                <p>Sen-Jum: 08:00 - 20:00 | Sab: 08:00 - 15:00</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-form-container" data-aos="fade-left" data-aos-delay="200">
+            <form id="contact-form" class="contact-form">
+              <h3>Kirimkan Pesan Anda</h3>
+              <p>Punya pertanyaan? Isi form di bawah dan tim kami akan segera merespon.</p>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="form-name" placeholder="Nama Anda">
+                </div>
+                <div class="form-group">
+                  <input type="email" id="form-email" placeholder="Email Anda">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <input type="text" id="form-subject" placeholder="Subjek">
+              </div>
+
+              <div class="form-group">
+                <textarea id="form-message" rows="6" placeholder="Pesan Anda"></textarea>
+              </div>
+              
+              <div id="form-message-display" class="form-message"></div>
+
+              <button type="submit" class="btn-primary">
+                Kirim Pesan
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+
+            <div class="map-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.669896791983!2d107.6256953153664!3d-6.930067469766864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e86e21c15f1d%3A0x6b8c4078872bda0c!2sSantosa%20Hospital%20Bandung%20Kopo!5e0!3m2!1sen!2sid!4v1678888888888!5m2!1sen!2sid" 
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/img/logo-rskencanahusada.svg" alt="RS Kencana Husada Logo">
+          </a>
+          <p>Jl. Buah Batu No, 1. Bandung<br>
+             Kecamatan Batununggal, Kota Bandung<br>
+             Jawa Barat, Indonesia 12345<br><br>
+            <strong>Telepon:</strong> +62 (021) 123-4567<br>
+            <strong>Email:</strong> info@rskencanahusada.co.id<br>
+          </p>
+          <div class="social-links">
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigasi Cepat</h4>
+          <ul>
+            <li><i class="fas fa-chevron-right"></i> <a href="index.html">Beranda</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="tentang.html">Tentang Kami</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="layanan.html">Layanan</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Syarat & Ketentuan</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Departemen & Layanan</h4>
+          <ul>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Kardiologi</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Neurologi</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Ortopedi</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Pediatri</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Gawat Darurat</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Karir & Kemitraan</h4>
+          <ul>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Bergabung dengan Kami</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Kemitraan Medis</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Penelitian & Edukasi</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyright-area">
+      <div class="container">
+        <p>
+          © Hak Cipta <strong><span>RS Kencana Husada</span></strong>. Seluruh Hak Cipta Dilindungi
+        </p>
+        <div class="credits">
+          © 2025 Dibuat Oleh <b>Gilang Kencana</b>.
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+  
+  <script src="script.js"></script>
+</body>
+</html>

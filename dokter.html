@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Dokter Kami - Rumah Sakit Kencana Husada</title>
+  <link rel="icon" href="assets/img/logo-rskencanahusada.svg" type="image/svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Temui tim dokter spesialis berpengalaman di Rumah Sakit Kencana Husada.">
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo-rskencanahusada.svg" alt="RS Kencana Husada Logo">
+      </a>
+
+      <nav class="nav-links">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="dokter.html" class="active">Dokter</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <a href="janji-temu.html" class="btn-appointment">
+        Buat Janji Temu
+      </a>
+
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-title">
+      <div class="container" data-aos="fade-up">
+        <h1>Tim Dokter Profesional Kami</h1>
+        <p>Kami bangga memiliki tim dokter spesialis terbaik yang berdedikasi untuk memberikan perawatan dengan keahlian dan kepedulian tulus.</p>
+      </div>
+    </section>
+
+    <section id="doctors-page">
+      <div class="container">
+        
+        <form class="doctor-search-form" data-aos="fade-up">
+          <input type="text" name="doctor_name" placeholder="Nama dokter atau kata kunci (misal: bedah jantung)">
+          <select name="specialty">
+            <option value="">Pilih Spesialisasi</option>
+            <option value="cardiology">Kardiologi</option>
+            <option value="neurology">Neurologi</option>
+            <option value="orthopedics">Ortopedi</option>
+            <option value="pediatrics">Pediatri</option>
+            <option value="dermatology">Dermatologi</option>
+            <option value="oncology">Onkologi</option>
+          </select>
+          <button type="submit" class="btn-primary">
+            <i class="fas fa-search"></i>
+            <span>Cari Dokter</span>
+          </button>
+        </form>
+
+        <div class="doctor-grid">
+
+          <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="doctor-image">
+              <img src="assets/img/dokter/Dr. Sakinah Mawaddah.png" alt="Dr. Sakinah Mawaddah">
+              <span class="availability online">Tersedia</span>
+            </div>
+            <div class="doctor-info">
+              <h5>Dr. Sakinah Mawaddah, Sp.JP</h5>
+              <span class="specialty">Kardiologi</span>
+              <p class="bio">Spesialis intervensi kardiologi dengan fokus pada penanganan penyakit jantung koroner dan hipertensi.</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(4.9)</span>
+              </div>
+              <div class="doctor-buttons">
+                <a href="#" class="btn-outline-small">Lihat Profil</a>
+                <a href="#" class="btn-primary-small">Buat Janji</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="doctor-image">
+              <img src="assets/img/dokter/Dr. Galang Geleng.png" alt="Dr. Galang Geleng">
+              <span class="availability busy">Sedang Operasi</span>
+            </div>
+            <div class="doctor-info">
+              <h5>Dr. Galang Geleng, Sp.N</h5>
+              <span class="specialty">Neurologi</span>
+              <p class="bio">Ahli dalam diagnosis dan pengobatan gangguan saraf, stroke, dan manajemen nyeri kronis.</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(4.7)</span>
+              </div>
+              <div class="doctor-buttons">
+                <a href="#" class="btn-outline-small">Lihat Profil</a>
+                <a href="#" class="btn-primary-small">Buat Janji</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctor-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="doctor-image">
+              <img src="assets/img/dokter/Dr. Asyu Ningsih.png" alt="Dr. Asyu Ningsih">
+              <span class="availability online">Tersedia</span>
+            </div>
+            <div class="doctor-info">
+              <h5>Dr. Asyu Ningsih, Sp.A</h5>
+              <span class="specialty">Pediatri</span>
+              <p class="bio">Mendedikasikan diri untuk kesehatan anak, dari perawatan neonatal hingga pemantauan tumbuh kembang.</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(5.0)</span>
+              </div>
+              <div class="doctor-buttons">
+                <a href="#" class="btn-outline-small">Lihat Profil</a>
+                <a href="#" class="btn-primary-small">Buat Janji</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctor-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="doctor-image">
+              <img src="assets/img/dokter/Dr. Putra Abadi Nanjaya.png" alt="Dr. Putra Abadi Nanjaya">
+              <span class="availability offline">Besok: 9 PAGI</span>
+            </div>
+            <div class="doctor-info">
+              <h5>Dr. Putra Abadi Nanjaya, Sp.OT</h5>
+              <span class="specialty">Ortopedi</span>
+              <p class="bio">Berfokus pada bedah ortopedi, kedokteran olahraga, dan pemulihan cedera muskuloskeletal.</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(5.0)</span>
+              </div>
+              <div class="doctor-buttons">
+                <a href="#" class="btn-outline-small">Lihat Profil</a>
+                <a href="#" class="btn-primary-small">Buat Janji</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctor-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="doctor-image">
+              <img src="assets/img/dokter/Dr. Azhary Bieber.png" alt="Dr. Azhary Bieber">
+              <span class="availability online">Tersedia</span>
+            </div>
+            <div class="doctor-info">
+              <h5>Dr. Azhary Bieber, Sp.KK</h5>
+              <span class="specialty">Dermatologi</span>
+              <p class="bio">Spesialis kesehatan kulit, estetika medis, dan penanganan kondisi dermatologis kompleks.</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>(4.6)</span>
+              </div>
+              <div class="doctor-buttons">
+                <a href="#" class="btn-outline-small">Lihat Profil</a>
+                <a href="#" class="btn-primary-small">Buat Janji</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="doctor-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="doctor-image">
+              <img src="assets/img/dokter/Dr. Asyiah Cahaya Ilahi.png" alt="Dr. Asyiah Cahaya Ilahi">
+              <span class="availability online">Tersedia</span>
+            </div>
+            <div class="doctor-info">
+              <h5>Dr. Asyiah C. Ilahi, Sp.Onk</h5>
+              <span class="specialty">Onkologi</span>
+              <p class="bio">Memberikan perawatan kanker yang komprehensif dan penuh empati menggunakan terapi inovatif.</p>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(5.0)</span>
+              </div>
+              <div class="doctor-buttons">
+                <a href="#" class="btn-outline-small">Lihat Profil</a>
+                <a href="#" class="btn-primary-small">Buat Janji</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="load-more-container" data-aos="fade-up">
+          <a href="#" class="btn-outline">Tampilkan Lebih Banyak</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/img/logo-rskencanahusada.svg" alt="RS Kencana Husada Logo">
+          </a>
+          <p>Jl. Buah Batu No, 1. Bandung<br>
+             Kecamatan Batununggal, Kota Bandung<br>
+             Jawa Barat, Indonesia 12345<br><br>
+            <strong>Telepon:</strong> +62 (021) 123-4567<br>
+            <strong>Email:</strong> info@rskencanahusada.co.id<br>
+          </p>
+          <div class="social-links">
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigasi Cepat</h4>
+          <ul>
+            <li><i class="fas fa-chevron-right"></i> <a href="index.html">Beranda</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="tentang.html">Tentang Kami</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="layanan.html">Layanan</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Syarat & Ketentuan</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Departemen & Layanan</h4>
+          <ul>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Kardiologi</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Neurologi</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Ortopedi</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Pediatri</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Gawat Darurat</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Karir & Kemitraan</h4>
+          <ul>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Bergabung dengan Kami</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Kemitraan Medis</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Penelitian & Edukasi</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyright-area">
+      <div class="container">
+        <p>
+          &copy; Hak Cipta <strong><span>RS Kencana Husada</span></strong>. Seluruh Hak Cipta Dilindungi
+        </p>
+        <div class="credits">
+          &copy; 2025 Dibuat Oleh <b>Gilang Kencana</b>.
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+  
+  <script src="script.js"></script>
+</body>
+</html>

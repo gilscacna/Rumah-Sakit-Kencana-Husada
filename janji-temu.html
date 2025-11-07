@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buat Janji Temu - Rumah Sakit Kencana Husada</title>
+  <link rel="icon" href="assets/img/logo-rskencanahusada.svg" type="image/svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="Atur jadwal janji temu Anda dengan dokter spesialis kami secara online.">
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo-rskencanahusada.svg" alt="RS Kencana Husada Logo">
+      </a>
+
+      <nav class="nav-links">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="dokter.html">Dokter</a></li>
+          <li class="dropdown">
+            <a href="#">Halaman Lain <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Galeri</a></li>
+              <li><a href="#">Testimoni</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <a href="janji-temu.html" class="btn-appointment active">
+        Buat Janji Temu
+      </a>
+
+      <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-title">
+     
+        <h1>Buat Janji Temu</h1>
+        <p>Atur jadwal konsultasi Anda dengan mudah melalui formulir online kami. Tim kami akan segera mengkonfirmasi jadwal Anda.</p>
+      </div>
+    </section>
+
+    <section id="appointment-booking">
+      <div class="container">
+        <div class="appointment-content-wrapper">
+
+          <div class="booking-info-left" data-aos="fade-right">
+            <h2>Reservasi Online Cepat & Mudah</h2>
+            <p>Reservasikan janji temu Anda hanya dalam beberapa langkah mudah. Tenaga profesional kami siap memberikan perawatan medis terbaik yang disesuaikan untuk Anda.</p>
+
+            <div class="info-list">
+              <div class="info-item-appointment">
+                <div class="icon-circle"><i class="far fa-calendar-alt"></i></div>
+                <div>
+                  <h4>Penjadwalan Fleksibel</h4>
+                  <p>Pilih dari slot waktu yang tersedia yang sesuai dengan jadwal sibuk Anda.</p>
+                </div>
+              </div>
+              <div class="info-item-appointment">
+                <div class="icon-circle"><i class="far fa-comment-dots"></i></div>
+                <div>
+                  <h4>Respon Cepat</h4>
+                  <p>Dapatkan konfirmasi dalam 15 menit setelah mengirimkan permintaan Anda.</p>
+                </div>
+              </div>
+              <div class="info-item-appointment">
+                <div class="icon-circle"><i class="fas fa-shield-alt"></i></div>
+                <div>
+                  <h4>Perawatan Medis Ahli</h4>
+                  <p>Dokter dan spesialis bersertifikat siap melayani Anda.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-form-right" data-aos="fade-left">
+            <form id="appointment-form-futuristic" class="booking-form-card">
+              <div class="form-row-appointment">
+                <div class="form-group-floating">
+                  <input type="text" id="apt-name" placeholder=" " required>
+                  <label for="apt-name">Nama Lengkap Anda</label>
+                </div>
+                <div class="form-group-floating">
+                  <input type="email" id="apt-email" placeholder=" " required>
+                  <label for="apt-email">Email Anda</label>
+                </div>
+              </div>
+
+              <div class="form-row-appointment">
+                <div class="form-group-floating">
+                  <input type="tel" id="apt-phone" placeholder=" " required>
+                  <label for="apt-phone">Nomor Telepon Anda</label>
+                </div>
+                <div class="form-group-floating">
+                  <select id="apt-department" required>
+                    <option value="" disabled selected>Pilih Departemen</option>
+                    <option value="Kardiologi">Kardiologi</option>
+                    <option value="Neurologi">Neurologi</option>
+                    <option value="Ortopedi">Ortopedi</option>
+                    <option value="Pediatri">Pediatri</option>
+                    <option value="Dermatologi">Dermatologi</option>
+                  </select>
+                  <label for="apt-department" class="select-label">Pilih Departemen</label>
+                </div>
+              </div>
+
+              <div class="form-row-appointment">
+                <div class="form-group-floating date-picker">
+                  <input type="date" id="apt-date" placeholder=" " required>
+                  <label for="apt-date">dd/mm/yyyy</label>
+                  <i class="far fa-calendar-alt calendar-icon"></i>
+                </div>
+                <div class="form-group-floating">
+                  <select id="apt-doctor" required>
+                    <option value="" disabled selected>Pilih Dokter</option>
+                    <option value="Dr. Sakinah Mawaddah">Dr. Sakinah Mawaddah</option>
+                    <option value="Dr. Galang Geleng">Dr. Galang Geleng</option>
+                    <option value="Dr. Asyu Ningsih">Dr. Asyu Ningsih</option>
+                    <option value="Dr. Putra Abadi Nanjaya">Dr. Putra Abadi Nanjaya</option>
+                  </select>
+                  <label for="apt-doctor" class="select-label">Pilih Dokter</label>
+                </div>
+              </div>
+
+              <div class="form-group-floating">
+                <textarea id="apt-message" rows="4" placeholder=" "></textarea>
+                <label for="apt-message">Jelaskan gejala atau alasan kunjungan Anda (opsional)</label>
+              </div>
+              
+              <div id="form-message-display" class="form-message"></div>
+
+              <button type="submit" class="btn-primary btn-book-appointment">
+                <i class="fas fa-book-medical"></i> Reservasi Janji Temu
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="appointment-steps" data-aos="fade-up" data-aos-delay="200">
+          <div class="step-item">
+            <div class="step-icon">1</div>
+            <h4>Isi Detail</h4>
+            <p>Berikan informasi pribadi Anda dan pilih departemen yang dituju</p>
+          </div>
+          <div class="step-item">
+            <div class="step-icon">2</div>
+            <h4>Pilih Tanggal</h4>
+            <p>Pilih tanggal dan slot waktu pilihan Anda dari opsi yang tersedia</p>
+          </div>
+          <div class="step-item">
+            <div class="step-icon">3</div>
+            <h4>Konfirmasi</h4>
+            <p>Terima konfirmasi instan dan detail janji temu Anda melalui email</p>
+          </div>
+          <div class="step-item">
+            <div class="step-icon">4</div>
+
+            <h4>Dapatkan Perawatan</h4>
+            <p>Kunjungi klinik kami pada jadwal Anda dan dapatkan layanan kesehatan</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">
+            <img src="assets/img/logo-rskencanahusada.svg" alt="RS Kencana Husada Logo">
+          </a>
+          <p>Jl. Buah Batu No, 1. Bandung<br>
+             Kecamatan Batununggal, Kota Bandung<br>
+             Jawa Barat, Indonesia 12345<br><br>
+            <strong>Telepon:</strong> +62 (021) 123-4567<br>
+            <strong>Email:</strong> info@rskencanahusada.co.id<br>
+          </p>
+          <div class="social-links">
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigasi Cepat</h4>
+          <ul>
+            <li><i class="fas fa-chevron-right"></i> <a href="index.html">Beranda</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="tentang.html">Tentang Kami</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="layanan.html">Layanan</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Syarat & Ketentuan</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Kebijakan Privasi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Departemen & Layanan</h4>
+          <ul>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Kardiologi</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Neurologi</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Ortopedi</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Pediatri</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Gawat Darurat</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Karir & Kemitraan</h4>
+          <ul>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Bergabung dengan Kami</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Kemitraan Medis</a></li>
+            <li><i class="fas fa-chevron-right"></i> <a href="#">Penelitian & Edukasi</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="copyright-area">
+      <div class="container">
+        <p>
+          &copy; Hak Cipta <strong><span>RS Kencana Husada</span></strong>. Seluruh Hak Cipta Dilindungi
+        </p>
+        <div class="credits">
+          &copy; 2025 Dibuat Oleh <b>Gilang Kencana</b>.
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+  
+  <script src="script.js"></script>
+</body>
+</html>
