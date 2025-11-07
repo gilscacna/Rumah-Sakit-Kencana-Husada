@@ -16,6 +16,7 @@
       menuToggle.addEventListener('click', () => {
         navLinks.classList.toggle('nav-active');
         menuToggle.classList.toggle('active');
+        document.body.classList.toggle('mobile-nav-open');
       });
     }
     
@@ -24,6 +25,7 @@
         if (navLinks.classList.contains('nav-active')) {
           navLinks.classList.remove('nav-active');
           menuToggle.classList.remove('active');
+          document.body.classList.remove('mobile-nav-open');
         }
       });
     });
@@ -113,6 +115,7 @@
     counters.forEach(counter => {
       observer.observe(counter);
     });
+
 
   });
 
