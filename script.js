@@ -85,7 +85,7 @@
     }
 
     const counters = document.querySelectorAll('.stat-counter');
-    const speed = 400;
+    const speed = 200;
 
     const animateCounter = (counter) => {
       const target = +counter.getAttribute('data-target');
